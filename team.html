@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Our Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+      }
+      p.subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 40px;
+        font-size: 1.2em;
+      }
+      .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+      }
+      .member-card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        padding: 28px 22px 20px 22px;
+        width: 260px;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .member-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+      }
+      .member-photo {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 18px;
+        border: 3px solid #fda085;
+      }
+      .member-name {
+        font-size: 1.18em;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 6px;
+      }
+      .member-role {
+        color: #fda085;
+        font-size: 1em;
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+      .member-bio {
+        color: #555;
+        font-size: 0.98em;
+        margin-bottom: 0;
+      }
+      @media (max-width: 800px) {
+        .team-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meet Our Team</h1>
+      <p class="subtitle">
+        Passionate. Creative. Dedicated. We work together to build amazing
+        things.
+      </p>
+      <div class="team-grid">
+        <div class="member-card">
+          <img
+            class="member-photo"
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="John Doe"
+          />
+          <div class="member-name">John Doe</div>
+          <div class="member-role">Team Lead</div>
+          <div class="member-bio">
+            Visionary leader with a knack for solving complex problems and
+            inspiring the team.
+          </div>
+        </div>
+        <div class="member-card">
+          <img
+            class="member-photo"
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            alt="Jane Smith"
+          />
+          <div class="member-name">Jane Smith</div>
+          <div class="member-role">Frontend Developer</div>
+          <div class="member-bio">
+            Expert in UI/UX, bringing designs to life with clean, responsive
+            code.
+          </div>
+        </div>
+        <div class="member-card">
+          <img
+            class="member-photo"
+            src="https://randomuser.me/api/portraits/men/54.jpg"
+            alt="Alex Brown"
+          />
+          <div class="member-name">Alex Brown</div>
+          <div class="member-role">Backend Developer</div>
+          <div class="member-bio">
+            Loves building robust APIs and scalable server-side solutions.
+          </div>
+        </div>
+        <div class="member-card">
+          <img
+            class="member-photo"
+            src="https://randomuser.me/api/portraits/women/68.jpg"
+            alt="Emily White"
+          />
+          <div class="member-name">Emily White</div>
+          <div class="member-role">Designer</div>
+          <div class="member-bio">
+            Creates stunning visuals and ensures a seamless user experience.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
